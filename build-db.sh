@@ -23,6 +23,7 @@ echo "###########################"
 
 ## Arch: x86_64
 cd x86_64
+rm -rf universe.db.tar.gz
 
 echo "###################################"
 echo "Building for architecture 'x86_64'."
