@@ -23,7 +23,6 @@ echo "###########################"
 
 ## Arch: x86_64
 cd x86_64
-rm -f universe*
 
 echo "###################################"
 echo "Building for architecture 'x86_64'."
