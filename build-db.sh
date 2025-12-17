@@ -37,15 +37,11 @@ repo-add -n -R universe.db.tar.gz *.pkg.tar.zst
 
 # Removing the symlinks because GitLab can't handle them.
 rm universe.db
-rm universe.db.sig
 rm universe.files
-rm universe.files.sig
 
 # Renaming the tar.gz files without the extension.
 mv universe.db.tar.gz universe.db
-mv universe.db.tar.gz.sig universe-db.sig
 mv universe.files.tar.gz universe.files
-mv universe.files.tar.gz.sig universe.files.sig
 
 echo "#######################################"
 echo "Packages in the repo have been updated!"
