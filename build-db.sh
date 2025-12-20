@@ -36,8 +36,8 @@ echo "###################################"
 repo-add -n -R universe.db.tar.gz *.pkg.tar.zst
 
 # Removing the symlinks because GitLab can't handle them.
-rm universe.db
-rm universe.files
+#rm universe.db
+#rm universe.files
 
 # Renaming the tar.gz files without the extension.
 mv universe.db.tar.gz universe.db
