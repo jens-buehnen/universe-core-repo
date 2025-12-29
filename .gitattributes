@@ -1,0 +1,2 @@
+jdk*.pkg.tar.zst filter=lfs diff=lfs merge=lfs -text
+freetube*.pkg.tar.zst filter=lfs diff=lfs merge=lfs -text
