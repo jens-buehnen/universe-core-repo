@@ -1,0 +1,8 @@
+#!/bin/env bash
+
+if ! grep universe /etc/pacman.conf &>/dev/null; then
+  echo '' | sudo tee -a /etc/pacman.conf
+  echo '[universe]' | sudo tee -a /etc/pacman.conf
+  echo 'SigLevel = Optional DatabaseOptional' | sudo tee -a /etc/pacman.conf
+  echo 'Server = https://github.com/jens-buehnen/universe-core-repo/raw/refs/heads/master/$arch' | sudo tee -a /etc/pacman.conf
+fi
